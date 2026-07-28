@@ -27,7 +27,11 @@
 
         <div class="profile-links" aria-label="Profile links">
           {% for item in site.profile_links %}
-            <a href="{{ item.url | relative_url }}">{{ item.label }}</a>
+            {% if item.url contains ':' %}
+              <a href="{{ item.url }}">{{ item.label }}</a>
+            {% else %}
+              <a href="{{ item.url | relative_url }}">{{ item.label }}</a>
+            {% endif %}
           {% endfor %}
         </div>
       </aside>

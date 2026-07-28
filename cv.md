@@ -11,8 +11,6 @@ permalink: /cv/
   <p><a class="button" href="{{ '/assets/files/cv.pdf' | relative_url }}">Download CV</a></p>
 </div>
 
-The website publish script automatically copies the newest PDF from the local `CV/` folder to this download link before committing updates.
-
 ## Selected Information
 
 - Associate Professor of Economics, Bentley University.
