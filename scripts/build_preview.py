@@ -121,6 +121,11 @@ def build() -> None:
     if files_src.exists():
         shutil.copytree(files_src, files_dest)
 
+    published_src = ROOT / "Published Papers"
+    published_dest = OUT / "Published Papers"
+    if published_src.exists():
+        shutil.copytree(published_src, published_dest, ignore=shutil.ignore_patterns(".DS_Store"))
+
     for source in PAGES:
         meta, body = split_front_matter((ROOT / source).read_text())
         output_path, depth, current_url = page_output_path(meta, source)

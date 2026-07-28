@@ -23,23 +23,3 @@ My work spans topics including health insurance and child mortality, the long-ru
   <a class="button" href="{{ '/research/' | relative_url }}">Research</a>
   <a class="button secondary" href="{{ '/assets/files/cv.pdf' | relative_url }}">Download CV</a>
 </div>
-
-## Current Appointments
-
-- Associate Professor of Economics, Bentley University, 2026-present.
-- Associate Member, REAL Centre, University of Cambridge, 2020-present.
-- Assistant Professor of Economics, Bentley University, 2020-2026.
-- Postdoctoral Research Fellow, Harvard T.H. Chan School of Public Health, 2019-2020.
-
-## Education
-
-- Ph.D. in Economics, Cornell University, 2019.
-- M.A. in Economics, Delhi School of Economics, 2010.
-- B.A. (Hons.) in Economics, University of Delhi, 2008.
-
-## Recent Highlights
-
-- Business Dean Faculty Excellence Award, Bentley University, 2026.
-- Center for Health and Business Seed Grant, 2025.
-- Bentley Health Thought Leadership Network Seed Grant, 2024.
-- Bentley Faculty Development Grants, 2021, 2024, and 2025.
