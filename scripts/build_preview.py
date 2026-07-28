@@ -13,7 +13,7 @@ import yaml
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "_preview"
-PAGES = ["index.md", "research.md", "teaching.md", "cv.md", "contact.md"]
+PAGES = ["index.md", "research.md", "working-papers.md", "teaching.md", "cv.md", "contact.md"]
 
 
 def split_front_matter(text: str) -> tuple[dict, str]:

@@ -15,12 +15,10 @@ navigation:
     url: "/"
   - title: "Research"
     url: "/research/"
+  - title: "Working Papers"
+    url: "/working-papers/"
   - title: "Teaching"
     url: "/teaching/"
-  - title: "CV"
-    url: "/cv/"
-  - title: "Contact"
-    url: "/contact/"
 
 profile_links: []
 

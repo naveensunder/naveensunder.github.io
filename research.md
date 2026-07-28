@@ -22,10 +22,13 @@ My research focuses on health, development, education, and human capital, with a
   </article>
 
   <article class="research-item">
-    <p class="research-title">Mind the Knowledge Gap: Exploring Geographic Patterns in Economics of Education Publications</p>
+    <p class="research-title">High-Income Dominance in Education Economics: Exploring the Publishing Divide</p>
     <p class="research-authors">With Savannah Adkins.</p>
     <p class="research-venue">Southern Economic Journal, 2025.</p>
-    <p class="research-note">Published-version link and abstract will be added once the PDF or publisher abstract is available.</p>
+    <div class="paper-actions">
+      <a class="paper-button" href="/Published%20Papers/Geography%20of%20Edu%20Pubs%20-%20Paper.pdf">Published version</a>
+      <details class="abstract-toggle"><summary>Abstract</summary><p>We analyze over 3,500 education-related articles published between 2002 and 2022 in the top 22 economics journals, and document striking geographic disparities. First, 85.7 percent of publications are based on high-income countries, with the United States alone accounting for 58.4 percent. Second, there is a strong positive income-publication gradient: wealthier countries receive more research attention. Third, countries with lower student learning levels are significantly underrepresented, even after accounting for GDP, population, and regional factors. Fourth, studies based on high-income countries are more likely to make external validity claims. We explore whether this bias is offset by development economics journals and find that while low- and middle-income country (LMIC) studies are more common there, even within LMICs, richer countries are disproportionately represented. Our findings suggest that structural features of knowledge production—including researcher location and funding concentration—contribute to persistent visibility gaps, with implications for equity, external validity, and global evidence-informed policymaking.</p></details>
+    </div>
   </article>
 
   <article class="research-item">
@@ -226,43 +229,3 @@ My research focuses on health, development, education, and human capital, with a
     </div>
   </article>
 </div>
-
-## Working Papers
-
-<div class="research-list">
-  <article class="research-item">
-    <p class="research-title">Foreign Aid and Child Health in Sub-Saharan Africa</p>
-    <p class="research-authors">With Akshay Ramana.</p>
-    <p class="research-venue">Revise and resubmit, Nature Communications.</p>
-  </article>
-
-  <article class="research-item">
-    <p class="research-title">Medical Advancements and Later-Life Mortality</p>
-    <p class="research-authors">With Jason Fletcher and Hamid Noghanibehambari.</p>
-  </article>
-
-  <article class="research-item">
-    <p class="research-title">Kindergarten Peer Effects</p>
-    <p class="research-authors">With Yanan Li and Nidhiya Menon.</p>
-  </article>
-
-  <article class="research-item">
-    <p class="research-title">The Grammar of Inequality: How Gendered Language Shapes Gender Norms</p>
-    <p class="research-authors">With Raine Spearman.</p>
-  </article>
-
-  <article class="research-item">
-    <p class="research-title">Low-Tech, High-Impact: Remote Support for Children's Learning</p>
-    <p class="research-authors">With Deepak Kumar and Rukmini Banerjee.</p>
-  </article>
-
-  <article class="research-item">
-    <p class="research-title">Toxic Tradeoffs: Ambient Air Quality and Mental Health in Africa</p>
-    <p class="research-authors">With Chon-Kit Ao.</p>
-  </article>
-</div>
-
-## Works In Progress
-
-- Negative Spillovers of Health Nudges, with Chon-Kit Ao, Somdeep Chatterjee, and Chien-Yu Lai.
-- Impact of Affirmative Action Policies on Education in India.
