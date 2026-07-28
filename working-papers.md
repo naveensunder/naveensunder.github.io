@@ -42,4 +42,5 @@ permalink: /working-papers/
 ## Works In Progress
 
 - Negative Spillovers of Health Nudges, with Chon-Kit Ao, Somdeep Chatterjee, and Chien-Yu Lai.
-- Impact of Affirmative Action Policies on Education in India.
+- Education and Trust in Medicine: Evidence from Five Natural Experiments in Africa, with Akshay Ramana and Lakshana Rachman.
+- Temperature and Productivity, with Krishna Meegada.
