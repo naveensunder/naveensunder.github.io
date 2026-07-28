@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+    <meta name="description" content="{{ site.description }}">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <div class="site-shell">
+      <aside class="sidebar" aria-label="Site introduction">
+        <div class="identity">
+          <a class="site-name" href="{{ '/' | relative_url }}">{{ site.author.name }}</a>
+          <p class="site-role">{{ site.author.role }}</p>
+          <p class="site-affiliation">{{ site.author.affiliation }}</p>
+          <p class="site-location">{{ site.author.location }}</p>
+        </div>
+
+        <nav class="site-nav" aria-label="Main navigation">
+          {% for item in site.navigation %}
+            <a href="{{ item.url | relative_url }}" {% if page.url == item.url %}aria-current="page"{% endif %}>{{ item.title }}</a>
+          {% endfor %}
+        </nav>
+
+        <div class="profile-links" aria-label="Profile links">
+          {% for item in site.profile_links %}
+            <a href="{{ item.url | relative_url }}">{{ item.label }}</a>
+          {% endfor %}
+        </div>
+      </aside>
+
+      <main id="main" class="content">
+        {{ content }}
+      </main>
+    </div>
+  </body>
+</html>

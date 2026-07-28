@@ -1,0 +1,41 @@
+title: "Naveen Sunder"
+description: "Associate Professor of Economics, Bentley University"
+url: "https://naveensunder.github.io"
+baseurl: ""
+email: "nsunder@bentley.edu"
+
+author:
+  name: "Naveen Sunder"
+  role: "Associate Professor of Economics"
+  affiliation: "Bentley University"
+  location: "Waltham, MA"
+
+navigation:
+  - title: "Home"
+    url: "/"
+  - title: "Research"
+    url: "/research/"
+  - title: "Teaching"
+    url: "/teaching/"
+  - title: "CV"
+    url: "/cv/"
+  - title: "Contact"
+    url: "/contact/"
+
+profile_links:
+  - label: "CV"
+    url: "/assets/files/cv.pdf"
+  - label: "Email"
+    url: "mailto:nsunder@bentley.edu"
+
+markdown: kramdown
+permalink: pretty
+
+sass:
+  style: compressed
+
+exclude:
+  - CV
+  - README.md
+  - publish.sh
+  - scripts
