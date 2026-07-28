@@ -22,7 +22,6 @@ My work spans topics including health insurance and child mortality, the long-ru
 <div class="button-row">
   <a class="button" href="{{ '/research/' | relative_url }}">Research</a>
   <a class="button secondary" href="{{ '/assets/files/cv.pdf' | relative_url }}">Download CV</a>
-  <a class="button secondary" href="mailto:nsunder@bentley.edu">Email</a>
 </div>
 
 ## Current Appointments

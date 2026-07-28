@@ -22,11 +22,7 @@ navigation:
   - title: "Contact"
     url: "/contact/"
 
-profile_links:
-  - label: "CV"
-    url: "/assets/files/cv.pdf"
-  - label: "Email"
-    url: "mailto:nsunder@bentley.edu"
+profile_links: []
 
 markdown: kramdown
 permalink: pretty

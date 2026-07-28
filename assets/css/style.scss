@@ -2,15 +2,15 @@
 ---
 
 :root {
-  --bg: #fbfaf7;
+  --bg: #fffefd;
   --panel: #ffffff;
   --text: #22211f;
   --muted: #67625b;
-  --line: #ddd6cb;
-  --accent: #0b6b68;
-  --accent-dark: #084f4d;
-  --warm: #9a4d2e;
-  --soft: #f1eee7;
+  --line: #e2ded6;
+  --accent: #315f8c;
+  --accent-dark: #234968;
+  --warm: #a15d3a;
+  --soft: #f4f1eb;
   --shadow: 0 18px 48px rgba(46, 42, 36, 0.08);
 }
 
@@ -26,7 +26,7 @@ body {
   margin: 0;
   min-height: 100vh;
   background:
-    linear-gradient(90deg, rgba(11, 107, 104, 0.08) 0, rgba(11, 107, 104, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(49, 95, 140, 0.045) 0, rgba(49, 95, 140, 0.045) 1px, transparent 1px),
     var(--bg);
   background-size: 88px 100%;
   color: var(--text);
@@ -91,7 +91,8 @@ a:hover {
 
 .site-role,
 .site-affiliation,
-.site-location {
+.site-location,
+.site-email {
   margin: 8px 0 0;
   color: var(--muted);
   line-height: 1.45;
@@ -103,14 +104,29 @@ a:hover {
   font-weight: 650;
 }
 
+.site-email {
+  margin-top: 16px;
+  font-size: 15px;
+}
+
+.site-email a {
+  color: var(--accent-dark);
+  text-decoration: none;
+}
+
+.site-email a:hover {
+  color: var(--warm);
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+}
+
 .site-nav {
   display: grid;
   gap: 8px;
   margin-top: 28px;
 }
 
-.site-nav a,
-.profile-links a {
+.site-nav a {
   display: inline-flex;
   align-items: center;
   min-height: 36px;
@@ -127,29 +143,6 @@ a:hover {
 .site-nav a[aria-current="page"] {
   color: var(--accent-dark);
   border-bottom-color: var(--accent);
-}
-
-.profile-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-top: 32px;
-}
-
-.profile-links a {
-  min-height: 34px;
-  padding: 4px 10px;
-  border: 1px solid var(--line);
-  border-radius: 6px;
-  background: rgba(255, 255, 255, 0.72);
-  color: var(--accent-dark);
-  font-size: 14px;
-  font-weight: 650;
-}
-
-.profile-links a:hover {
-  border-color: var(--accent);
-  color: var(--warm);
 }
 
 .content {

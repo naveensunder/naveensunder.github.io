@@ -61,14 +61,6 @@ def nav_html(config: dict, current_url: str, page_depth: int) -> str:
     return "\n          ".join(links)
 
 
-def profile_links_html(config: dict, page_depth: int) -> str:
-    links = []
-    for item in config["profile_links"]:
-        href = relative_url(item["url"], page_depth)
-        links.append(f'<a href="{href}">{item["label"]}</a>')
-    return "\n          ".join(links)
-
-
 def render_page(config: dict, meta: dict, body: str, page_depth: int, current_url: str) -> str:
     body = render_liquid_urls(body, page_depth)
     content = markdown.markdown(body, extensions=["extra"])
@@ -94,15 +86,12 @@ def render_page(config: dict, meta: dict, body: str, page_depth: int, current_ur
           <p class="site-role">{config['author']['role']}</p>
           <p class="site-affiliation">{config['author']['affiliation']}</p>
           <p class="site-location">{config['author']['location']}</p>
+          <p class="site-email"><a href="mailto:{config['email']}">{config['email']}</a></p>
         </div>
 
         <nav class="site-nav" aria-label="Main navigation">
           {nav_html(config, current_url, page_depth)}
         </nav>
-
-        <div class="profile-links" aria-label="Profile links">
-          {profile_links_html(config, page_depth)}
-        </div>
       </aside>
 
       <main id="main" class="content">
