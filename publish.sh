@@ -14,12 +14,11 @@ fi
 git add .
 
 if git diff --cached --quiet; then
-  echo "No website changes to publish."
-  exit 0
+  echo "No new local changes to commit."
+else
+  message="${1:-Update website}"
+  git commit -m "$message"
 fi
-
-message="${1:-Update website}"
-git commit -m "$message"
 
 branch="$(git branch --show-current)"
 if [ -z "$branch" ]; then
