@@ -12,6 +12,15 @@ My research focuses on health, development, education, and human capital, with a
 
 <div class="research-list">
   <article class="research-item">
+    <p class="research-title">Parents' Access to Schools and Intergenerational Human Capital: Evidence from India</p>
+    <p class="research-venue">Journal of Human Resources, 2026.</p>
+    <div class="paper-actions">
+      <a class="paper-button" href="https://jhr.uwpress.org/content/early/2026/06/01/jhr.0520-10939R3">Published version</a>
+      <details class="abstract-toggle"><summary>Abstract</summary><p>This paper estimates the direct and intergenerational effects of one of the world’s largest school expansion policies. Starting in 1993-94, the District Primary Education Programme (DPEP) constructed over 100,000 new schools and served over 50 million children in India. Using a fuzzy regression discontinuity design I show that the policy increased enrollment, literacy and years of education for both male and female direct beneficiaries. Further, I find that children whose mothers were DPEP beneficiaries had higher scores on vernacular (18 percent), math (13 percent), and English (15 percent) tests, while Father’s DPEP exposure had no effect on children’s learning.</p></details>
+    </div>
+  </article>
+
+  <article class="research-item">
     <p class="research-title">Does Greater Flexibility of Online Labor Markets Encourage Female Labor Force Participation?</p>
     <p class="research-authors">With Rakesh Banerjee, Tushar Bharati, Adnan Fakir, and Yiwei Qian.</p>
     <p class="research-venue">Labor Economics, 2025.</p>
@@ -48,15 +57,6 @@ My research focuses on health, development, education, and human capital, with a
     <div class="paper-actions">
       <a class="paper-button" href="/Published%20Papers/2025,%20Sharma%20%26%20Sunder%20-%20Crime%20and%20Human%20Capital%20In%20India%20(World%20Dev).pdf">Published version</a>
       <details class="abstract-toggle"><summary>Abstract</summary><p>Violent crime profoundly affects several socioeconomic outcomes. But does day-to-day crime also shape human capital accumulation? We answer this question in the Indian context by combining multiple years of district-level crime data with a representative survey on learning achievement of school-aged children. Our empirical strategy leverages the district-year variation in crime to estimate the crime-learning gradient. We find that an increase in violent crime is associated with lower achievement in reading and math, while non-violent crimes have no discernible correlation with learning outcomes. These associations hold similarly for boys and girls. Further, children from socioeconomically disadvantaged households show stronger negative associations. We document evidence that both household-level factors (reduced child mobility, lower adult engagement in work, and poorer mental health) and school-level factors (lower availability of teachers) are possible mechanisms underpinning these findings.</p></details>
-    </div>
-  </article>
-
-  <article class="research-item">
-    <p class="research-title">Parents' Access to Schools and Intergenerational Human Capital: Evidence from India</p>
-    <p class="research-venue">Journal of Human Resources, conditionally accepted, 2025.</p>
-    <div class="paper-actions">
-      <a class="paper-button" href="/Published%20Papers/2025,%20School%20Construction%20%26%20Intergenerational%20Human%20Capital%20(Conditionally%20Accepted,%20JHR).pdf">Published version</a>
-      <details class="abstract-toggle"><summary>Abstract</summary><p>This paper estimates the direct and intergenerational effects of one of the world’s largest school expansion policies. Starting in 1993-94, the District Primary Education Programme (DPEP) constructed over 100,000 new schools and served over 50 million children in India. Using a fuzzy regression discontinuity design I show that the policy increased enrollment, literacy and years of education for both male and female direct beneficiaries. Further, I find that children whose mothers were DPEP beneficiaries had higher scores on vernacular (18 percent), math (13 percent), and English (15 percent) tests, while Father’s DPEP exposure had no effect on children’s learning.</p></details>
     </div>
   </article>
 
