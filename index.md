@@ -5,6 +5,8 @@ title: Home
 
 # Naveen Sunder
 
+![Naveen Sunder]({{ '/assets/images/naveen-sunder.jpg' | relative_url }}){:.profile-photo}
+
 <p class="lede">I am an economist working at the intersection of applied microeconomics, health economics, and development economics.</p>
 
 <ul class="field-list">

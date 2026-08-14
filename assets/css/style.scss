@@ -203,6 +203,14 @@ li {
   line-height: 1.62;
 }
 
+.profile-photo {
+  float: right;
+  width: min(34vw, 260px);
+  margin: 4px 0 24px 34px;
+  border-radius: 6px;
+  box-shadow: var(--shadow);
+}
+
 .meta-line {
   color: var(--muted);
   font-size: 15px;
@@ -436,5 +444,12 @@ li {
 
   .lede {
     font-size: 18px;
+  }
+
+  .profile-photo {
+    float: none;
+    display: block;
+    width: min(100%, 260px);
+    margin: 0 0 24px;
   }
 }

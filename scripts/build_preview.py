@@ -121,6 +121,11 @@ def build() -> None:
     if files_src.exists():
         shutil.copytree(files_src, files_dest)
 
+    images_src = ROOT / "assets/images"
+    images_dest = OUT / "assets/images"
+    if images_src.exists():
+        shutil.copytree(images_src, images_dest)
+
     published_src = ROOT / "Published Papers"
     published_dest = OUT / "Published Papers"
     if published_src.exists():
