@@ -1,0 +1,104 @@
+# Working papers: every paper with a draft file in the "Working Papers" folder, newest first.
+# Fields: title, authors (full order from the title page), version (date on the draft), year,
+# pdf (path in this repo), abstract. Papers without a draft go under "progress" below.
+
+papers:
+  - title: "The Company You Keep: Peer Effects of Early Childhood Education on Learning and Mental Health in Early Adolescence"
+    authors: [Yanan Li, Nidhiya Menon, Naveen Sunder]
+    version: September 2026
+    year: 2026
+    pdf: /Working Papers/Peer_Effects_KG_Sept2026.pdf
+    abstract: >
+      Standard evaluations of early childhood education measure returns to the individual attendee,
+      ignoring the possibility that skills acquired in early childhood propagate to peers through
+      sustained social interaction. If such spillovers exist, the social returns to early childhood
+      investment are systematically underestimated. We test this hypothesis using nationally
+      representative panel data on middle-school students in China, exploiting random classroom
+      assignment to estimate the causal effect of exposure to kindergarten-attending peers on mental
+      health, social adjustment, and academic outcomes. Effects are negligible after three to six
+      months of peer exposure. After fourteen or more months, a ten-percentage-point increase in peer
+      kindergarten share improves non-cognitive outcomes by 0.074 standard deviations and academic
+      achievement by 0.072 standard deviations. Drawing on the technology of skill formation, we
+      interpret these duration-dependent results as evidence that behavioral norms and socio-emotional
+      competencies require sustained peer interaction to propagate. Effects are concentrated among
+      disadvantaged students, suggesting that deliberate classroom integration represents a low-cost
+      lever for reducing socioeconomic disparities, especially in non-cognitive skill formation.
+
+  - title: "Gendered Language and Women's Agency"
+    authors: [Raine Spearman, Naveen Sunder]
+    version: September 2026
+    year: 2026
+    pdf: /Working Papers/Gendered Language & IPV v2.pdf
+    abstract: >
+      Many languages have sex-based or gendered grammar, that is, they require speakers to mark
+      male/female distinctions as part of regular everyday conversations. For example, in Spanish
+      book is masculine (el libro rojo), while table is feminine (la mesa roja). We ask whether women
+      who speak such gendered languages report different gender attitudes and household outcomes.
+      Using data on more than 1.5 million women residing in 53 countries and speaking 151 languages,
+      we find that women speaking gendered languages report more intimate partner violence (IPV)
+      (1.2 percentage points) and lower participation in household decisions (4-6 percentage points).
+      This pattern is consistent with linguistic theory: repeated gender marking in everyday
+      conversations may make gender categories more salient, and hence shape real world outcomes. We
+      then examine whether the association operates primarily through long-run cultural transmission
+      (native language) or through more immediate cognitive salience (interview language). We find
+      evidence consistent with both channels, with somewhat stronger support for the
+      cultural-transmission channel. We also show that the pattern remains after controlling for
+      different cultural and institutional factors.
+
+  - title: "Low Cost, High Reach: Mobile Interventions for Foundational Learning during School Closures"
+    authors: [Deepak Kumar, Naveen Sunder, Ruchi Chaudhary, Siddhesh Mhatre, Rukmini Banerji, Wilima Wadhwa]
+    version: August 2026
+    year: 2026
+    pdf: /Working Papers/sms_paper_v3.pdf
+    abstract: >
+      India's schools were closed for 82 weeks during COVID-19; when they reopened in early 2022,
+      children returned far behind on foundational skills. We ask whether the cheapest channel
+      available, a text message to any mobile phone, can help them catch up, and how much a brief
+      human follow-up adds. In a cluster-randomized trial in 1,162 villages across 19 Indian states,
+      run in the first weeks after schools reopened, about 27,000 children in Grades 3-5 who could
+      not yet subtract received one numeracy activity a day by SMS for four weeks, matched to each
+      child's level and written for a caregiver to do with the child. In a second arm, a field worker
+      from the implementing NGO, already known to the family, also called once a week to ask whether
+      the activities were being done, but did not teach. Messages alone raise arithmetic by 0.14
+      standard deviations and the share of children who can subtract from 14 to 19 percent; with the
+      calls, the gains rise to 0.24 standard deviations and 23 percent. There is also a spillover to
+      reading, which the program did not address, of 0.07-0.15 standard deviations, and the gains are
+      present in households with only a basic phone. Where one-way texting has mostly failed,
+      level-matched activities from a trusted organization succeed, and a brief call with no
+      instruction adds a further 0.10 standard deviations. The messages were virtually free to send,
+      and the calls cost well under a dollar per child.
+
+  - title: "Medical Advancements and Later Life Mortality: Evidence from Sulfa Drugs"
+    authors: [Jason Fletcher, Hamid Noghanibehambari, Naveen Sunder]
+    version: June 2026
+    year: 2026
+    pdf: /Working Papers/Sulfa_Drug_Mortality_2026_06_25.pdf
+    abstract: >
+      We study the long-run consequences of a major early-life exposure to a medical innovation: the
+      rapid diffusion of sulfonamide antibiotics in the late 1930s. We leverage large cross-state
+      differences in pre-sulfa mortality from maternal infections, scarlet fever, and
+      influenza/pneumonia to construct plausibly exogenous variation in the intensity of early-life
+      exposure among U.S. birth cohorts. Linking these baseline differences to more than 34 million
+      NCHS death records and 5 million Census-Numident observations, we find that children aged 0-4
+      in high-mortality states at the time of sulfa's introduction experience longer adult lifespans,
+      roughly 1.4 months per standard-deviation increase in baseline disease burden. The estimates
+      are robust across specifications, appear in both administrative datasets, and are concentrated
+      among children from low-SES families and rural areas. Mechanism analyses reveal reductions in
+      infant mortality and adult cognitive, ambulatory, and functional disabilities, alongside modest
+      but significant increases in adult education and income. The results show that major medical
+      innovations can generate both immediate mortality gains and persistent improvements in
+      longevity over the life course.
+
+# Work in progress: no draft yet. Fields: title, authors, optional status.
+progress:
+  - title: "Foreign Aid and Child Health in Sub-Saharan Africa"
+    authors: [Akshay Ramana, Naveen Sunder]
+    status: "Revise and resubmit, Nature Communications"
+  - title: "Toxic Tradeoffs: Ambient Air Quality and Mental Health in Africa"
+    authors: [Chon-Kit Ao, Naveen Sunder]
+  - title: "Negative Spillovers of Health Nudges"
+    authors: [Chon-Kit Ao, Somdeep Chatterjee, Chien-Yu Lai, Naveen Sunder]
+  - title: "Education and Trust in Medicine: Evidence from Five Natural Experiments in Africa"
+    authors: [Akshay Ramana, Lakshana Rachman, Naveen Sunder]
+  - title: "Temperature and Productivity"
+    authors: [Krishna Meegada, Naveen Sunder]

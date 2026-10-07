@@ -1,0 +1,35 @@
+---
+layout: default
+title: Working Papers
+description: "Working papers and work in progress by Naveen Sunder."
+permalink: /working-papers/
+has_pubs: true
+---
+<section class="page-content">
+  <h1 class="page-title">Working Papers</h1>
+  <div class="research-list">
+
+    <section class="pub-section">
+      <div class="pub-section-head"><h2 class="pub-group">Working Papers</h2></div>
+      <div class="pub-section-body">
+        {%- for p in site.data.working_papers.papers %}
+        {%- assign pub = p %}
+        {%- assign pubid = "wp-" | append: forloop.index %}
+        {% include pub.html %}
+        {%- endfor %}
+      </div>
+    </section>
+
+    <section class="pub-section">
+      <div class="pub-section-head"><h2 class="pub-group">Work in Progress</h2></div>
+      <div class="pub-section-body">
+        {%- for p in site.data.working_papers.progress %}
+        {%- assign pub = p %}
+        {%- assign pubid = "wip-" | append: forloop.index %}
+        {% include pub.html %}
+        {%- endfor %}
+      </div>
+    </section>
+
+  </div>
+</section>

@@ -1,6 +1,6 @@
 title: "Naveen Sunder"
-description: "Associate Professor of Economics, Bentley University"
-url: "https://naveensunder.github.io"
+description: "Associate Professor of Economics at Bentley University. Applied microeconomist working on health, development, and the economics of education."
+url: "https://www.naveensunder.com"
 baseurl: ""
 email: "nsunder@bentley.edu"
 
@@ -8,19 +8,48 @@ author:
   name: "Naveen Sunder"
   role: "Associate Professor of Economics"
   affiliation: "Bentley University"
+  affiliation_url: "https://www.bentley.edu/"
+  department: "Department of Economics"
+  address: "175 Forest Street, Waltham, MA 02452"
   location: "Waltham, MA"
+  photo: "/assets/images/naveen-sunder.jpg"
+  photo_credit: ""
+  scholar: "https://scholar.google.com/citations?user=2T9ykB4AAAAJ&hl=en"
+  faculty_page: "https://faculty.bentley.edu/profile/nsunder"
+  cv: "/assets/files/cv.pdf"
 
+# Top navigation, left to right. "About" is the homepage.
 navigation:
-  - title: "Home"
+  - title: "About"
     url: "/"
-  - title: "Research"
-    url: "/research/"
+  - title: "Publications"
+    url: "/publications/"
   - title: "Working Papers"
     url: "/working-papers/"
   - title: "Teaching"
     url: "/teaching/"
 
-profile_links: []
+# Icon links shown after the navigation. icon: scholar | cv | envelope | university
+profile_links:
+  - name: "Google Scholar"
+    icon: "scholar"
+    url: "https://scholar.google.com/citations?user=2T9ykB4AAAAJ&hl=en"
+    external: true
+  - name: "Curriculum vitae"
+    icon: "cv"
+    url: "/assets/files/cv.pdf"
+    external: true
+  - name: "Contact"
+    icon: "envelope"
+    url: "/contact/"
+  - name: "Bentley faculty page"
+    icon: "university"
+    url: "https://faculty.bentley.edu/profile/nsunder"
+    external: true
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-redirect-from
 
 markdown: kramdown
 permalink: pretty
@@ -33,3 +62,5 @@ exclude:
   - README.md
   - publish.sh
   - scripts
+  - _preview
+  - "Working Papers/Peer_Effects_KG_Sept2026.docx"

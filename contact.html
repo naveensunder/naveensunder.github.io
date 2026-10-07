@@ -1,0 +1,15 @@
+---
+layout: default
+title: Contact
+description: "Contact details for Naveen Sunder, Bentley University."
+permalink: /contact/
+---
+<section class="page-content">
+  <h1 class="page-title">Contact</h1>
+  <dl class="contact-grid">
+    <dt>Email</dt><dd><a href="mailto:{{ site.email }}">{{ site.email }}</a></dd>
+    <dt>Office</dt><dd>{{ site.author.department }}, {{ site.author.affiliation }}<br>{{ site.author.address }}</dd>
+    <dt>Profiles</dt><dd><a href="{{ site.author.scholar }}" target="_blank" rel="noopener">Google Scholar</a> &middot; <a href="{{ site.author.faculty_page }}" target="_blank" rel="noopener">Bentley faculty page</a></dd>
+    <dt>CV</dt><dd><a href="{{ site.author.cv | relative_url }}" target="_blank" rel="noopener">Download the current CV (PDF)</a></dd>
+  </dl>
+</section>

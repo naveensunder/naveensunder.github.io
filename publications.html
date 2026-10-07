@@ -1,0 +1,46 @@
+---
+layout: default
+title: Publications
+description: "Peer-reviewed publications by Naveen Sunder in economics, health, nutrition, and policy."
+permalink: /publications/
+redirect_from:
+  - /research/
+has_pubs: true
+---
+<section class="page-content">
+  <h1 class="page-title">Publications</h1>
+  <div class="research-list">
+
+    <section class="pub-section">
+      <div class="pub-section-head"><h2 class="pub-group">Fields of Interest</h2></div>
+      <div class="pub-section-body">
+        <p class="pub-fields">Health Economics &middot; Development Economics &middot; Economics of Education</p>
+      </div>
+    </section>
+
+    {%- assign econ = site.data.publications | where: "section", "economics" %}
+    <section class="pub-section">
+      <div class="pub-section-head"><h2 class="pub-group">Economics</h2></div>
+      <div class="pub-section-body">
+        {%- for p in econ %}
+        {%- assign pub = p %}
+        {%- assign pubid = "econ-" | append: forloop.index %}
+        {% include pub.html %}
+        {%- endfor %}
+      </div>
+    </section>
+
+    {%- assign health = site.data.publications | where: "section", "health-policy" %}
+    <section class="pub-section">
+      <div class="pub-section-head"><h2 class="pub-group">Health, Nutrition and Policy</h2></div>
+      <div class="pub-section-body">
+        {%- for p in health %}
+        {%- assign pub = p %}
+        {%- assign pubid = "health-" | append: forloop.index %}
+        {% include pub.html %}
+        {%- endfor %}
+      </div>
+    </section>
+
+  </div>
+</section>

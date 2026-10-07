@@ -1,0 +1,110 @@
+{%- comment -%}
+One entry in a publication list. Set these before including:
+  pub   : a record from _data/publications.yml or _data/working_papers.yml
+  pubid : a unique id string for this entry (used by the abstract / cite panels)
+Fields used: title, authors, journal, year, volume, pages, doi, url, pdf, version, status, abstract.
+{%- endcomment -%}
+{%- assign na = pub.authors | size -%}
+{%- capture apa_authors -%}
+  {%- for a in pub.authors -%}
+    {%- unless forloop.first -%}
+      {%- if forloop.last and a != "et al." -%}{%- if na == 2 %} & {% else %}, & {% endif -%}{%- else -%}, {% endif -%}
+    {%- endunless -%}
+    {%- if a == "et al." -%}et al.
+    {%- else -%}
+      {%- assign parts = a | split: " " -%}
+      {%- assign n = parts.size | minus: 1 -%}
+      {{- parts[n] }}, {% for p in parts %}{% unless forloop.last %}{{ p | slice: 0 }}.{% unless forloop.index == n %} {% endunless %}{% endunless %}{% endfor %}
+    {%- endif -%}
+  {%- endfor -%}
+{%- endcapture -%}
+{%- capture bib_authors -%}
+  {%- for a in pub.authors -%}
+    {%- if a == "et al." -%}others
+    {%- else -%}
+      {%- assign parts = a | split: " " -%}
+      {%- assign n = parts.size | minus: 1 -%}
+      {{- parts[n] }}, {% for p in parts %}{% unless forloop.last %}{{ p }}{% unless forloop.index == n %} {% endunless %}{% endunless %}{% endfor %}
+    {%- endif -%}
+    {%- unless forloop.last %} and {% endunless -%}
+  {%- endfor -%}
+{%- endcapture -%}
+{%- assign first_parts = pub.authors[0] | split: " " -%}
+{%- assign fn = first_parts.size | minus: 1 -%}
+{%- assign words = pub.title | downcase | split: " " -%}
+{%- assign keyword = "" -%}
+{%- for w in words -%}{%- if keyword == "" and w.size > 3 -%}{%- assign keyword = w -%}{%- endif -%}{%- endfor -%}
+{%- assign keyword = keyword | remove: "'" | remove: ":" | remove: "," | remove: "?" | remove: "." | remove: "-" -%}
+{%- capture bibkey -%}{{ first_parts[fn] | downcase | remove: "'" | remove: "." }}{{ pub.year }}{{ keyword }}{%- endcapture -%}
+{%- capture bibtex -%}
+{%- if pub.journal -%}
+@article{ {{- bibkey -}},
+  author  = { {{- bib_authors -}} },
+  title   = { {{- pub.title -}} },
+  journal = { {{- pub.journal -}} },
+  year    = { {{- pub.year -}} }
+{%- if pub.volume %},
+  volume  = { {{- pub.volume -}} }{% endif %}
+{%- if pub.pages %},
+  pages   = { {{- pub.pages -}} }{% endif %}
+{%- if pub.doi %},
+  doi     = { {{- pub.doi -}} }{% endif %}
+}
+{%- else -%}
+@unpublished{ {{- bibkey -}},
+  author = { {{- bib_authors -}} },
+  title  = { {{- pub.title -}} },
+  note   = {Working paper{% if pub.version %}, {{ pub.version }}{% endif %}},
+  year   = { {{- pub.year -}} }
+}
+{%- endif -%}
+{%- endcapture -%}
+{%- capture apa -%}
+{%- if pub.journal -%}
+{%- assign title_end = pub.title | slice: -1 -%}
+{{ apa_authors }} ({{ pub.year }}). {{ pub.title }}{% unless title_end == "?" or title_end == "." %}.{% endunless %} <em>{{ pub.journal }}</em>{% if pub.volume %}, <em>{{ pub.volume }}</em>{% if pub.pages %}, {{ pub.pages }}{% endif %}{% endif %}.{% if pub.doi %} https://doi.org/{{ pub.doi }}{% endif %}
+{%- else -%}
+{{ apa_authors }} ({{ pub.year }}). <em>{{ pub.title }}</em> [Working paper{% if pub.version %}, {{ pub.version }}{% endif %}].
+{%- endif -%}
+{%- endcapture -%}
+<article class="pub" id="{{ pubid }}">
+  <h3 class="pub-title">{{ pub.title }}</h3>
+  <p class="pub-cite">{{ apa_authors }}
+    {%- if pub.journal %}<br><em>{{ pub.journal }}</em>, {{ pub.year }}
+    {%- elsif pub.version %}<br>Draft, {{ pub.version }}
+    {%- elsif pub.status %}<br>{{ pub.status }}{% endif %}</p>
+  {%- if pub.abstract or pub.url or pub.doi or pub.pdf or pub.year %}
+  <div class="pub-links">
+    {%- if pub.abstract %}
+    <button class="pub-tab" type="button" data-target="{{ pubid }}-abs" aria-controls="{{ pubid }}-abs" aria-expanded="false">Abstract</button>
+    {%- endif %}
+    {%- if pub.url %}
+    <a class="pub-link" href="{{ pub.url }}" target="_blank" rel="noopener">Published version</a>
+    {%- elsif pub.doi %}
+    <a class="pub-link" href="https://doi.org/{{ pub.doi }}" target="_blank" rel="noopener">Published version</a>
+    {%- endif %}
+    {%- if pub.pdf %}
+    <a class="pub-link" href="{{ pub.pdf | uri_escape | relative_url }}" target="_blank" rel="noopener">{% if pub.version %}Draft (PDF){% else %}PDF{% endif %}</a>
+    {%- endif %}
+    {%- if pub.year %}
+    <button class="pub-tab" type="button" data-target="{{ pubid }}-cite" aria-controls="{{ pubid }}-cite" aria-expanded="false">Cite</button>
+    {%- endif %}
+  </div>
+  {%- endif %}
+  {%- if pub.abstract %}
+  <div class="pub-panel" id="{{ pubid }}-abs" hidden>
+    <p>{{ pub.abstract }}</p>
+  </div>
+  {%- endif %}
+  {%- if pub.year %}
+  <div class="pub-panel pub-cite-panel" id="{{ pubid }}-cite" hidden>
+    <div class="cite-bar">
+      <button class="cite-fmt is-active" type="button" data-fmt="bibtex" aria-pressed="true">BibTeX</button>
+      <button class="cite-fmt" type="button" data-fmt="apa" aria-pressed="false">APA</button>
+      <button class="cite-copy" type="button">Copy</button>
+    </div>
+    <pre class="cite-text" data-fmt="bibtex">{{ bibtex | escape }}</pre>
+    <p class="cite-text" data-fmt="apa" hidden>{{ apa }}</p>
+  </div>
+  {%- endif %}
+</article>
