@@ -2,7 +2,8 @@
 One entry in a publication list. Set these before including:
   pub   : a record from _data/publications.yml or _data/working_papers.yml
   pubid : a unique id string for this entry (used by the abstract / cite panels)
-Fields used: title, authors, journal, year, volume, pages, doi, url, pdf, version, status, abstract.
+  pubnum: optional number shown to the left of the entry (Publications page)
+Fields used: title, authors, journal, year, volume, pages, doi, url, pdf, ssrn, version, status, abstract.
 {%- endcomment -%}
 {%- assign na = pub.authors | size -%}
 {%- capture apa_authors -%}
@@ -67,13 +68,17 @@ Fields used: title, authors, journal, year, volume, pages, doi, url, pdf, versio
 {{ apa_authors }} ({{ pub.year }}). <em>{{ pub.title }}</em> [Working paper{% if pub.version %}, {{ pub.version }}{% endif %}].
 {%- endif -%}
 {%- endcapture -%}
-<article class="pub" id="{{ pubid }}">
+<article class="pub{% if pubnum %} numbered{% endif %}" id="{{ pubid }}">
+  {%- if pubnum %}
+  <span class="pub-num" aria-hidden="true">{{ pubnum }}.</span>
+  {%- endif %}
+  <div class="pub-body">
   <h3 class="pub-title">{{ pub.title }}</h3>
   <p class="pub-cite">{{ apa_authors }}
     {%- if pub.journal %}<br><em>{{ pub.journal }}</em>, {{ pub.year }}
     {%- elsif pub.version %}<br>Draft, {{ pub.version }}
     {%- elsif pub.status %}<br>{{ pub.status }}{% endif %}</p>
-  {%- if pub.abstract or pub.url or pub.doi or pub.pdf or pub.year %}
+  {%- if pub.abstract or pub.url or pub.doi or pub.pdf or pub.ssrn or pub.year %}
   <div class="pub-links">
     {%- if pub.abstract %}
     <button class="pub-tab" type="button" data-target="{{ pubid }}-abs" aria-controls="{{ pubid }}-abs" aria-expanded="false">Abstract</button>
@@ -85,6 +90,9 @@ Fields used: title, authors, journal, year, volume, pages, doi, url, pdf, versio
     {%- endif %}
     {%- if pub.pdf %}
     <a class="pub-link" href="{{ pub.pdf | uri_escape | relative_url }}" target="_blank" rel="noopener">{% if pub.version %}Draft (PDF){% else %}PDF{% endif %}</a>
+    {%- endif %}
+    {%- if pub.ssrn %}
+    <a class="pub-link" href="{{ pub.ssrn }}" target="_blank" rel="noopener">Draft (SSRN)</a>
     {%- endif %}
     {%- if pub.year %}
     <button class="pub-tab" type="button" data-target="{{ pubid }}-cite" aria-controls="{{ pubid }}-cite" aria-expanded="false">Cite</button>
@@ -107,4 +115,5 @@ Fields used: title, authors, journal, year, volume, pages, doi, url, pdf, versio
     <p class="cite-text" data-fmt="apa" hidden>{{ apa }}</p>
   </div>
   {%- endif %}
+  </div>
 </article>

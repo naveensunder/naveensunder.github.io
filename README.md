@@ -32,7 +32,7 @@ Everything in the folder is published, including the PDFs in `Published Papers/`
       Text of the abstract.
   ```
 
-- **Working papers and work in progress:** `_data/working_papers.yml`. A paper with a draft PDF goes under `papers:` (fields `title`, `authors`, `version`, `year`, `pdf`, `abstract`). A paper without a draft goes under `progress:` (fields `title`, `authors`, optional `status`). Put the draft PDF in `Working Papers/`.
+- **Working papers and work in progress:** `_data/working_papers.yml`. A paper with a draft PDF goes under `papers:` (fields `title`, `authors`, `version`, `year`, `pdf` and/or `ssrn` link, `abstract`). A paper without a draft goes under `progress:` (fields `title`, `authors`, optional `status`). Put the draft PDF in `Working Papers/`.
 - **Courses:** `teaching.html`.
 - **Contact and CV pages:** `contact.html`, `cv.html`.
 - **Navigation, name, email, profile links (Google Scholar, faculty page):** `_config.yml`.

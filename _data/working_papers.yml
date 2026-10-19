@@ -1,8 +1,43 @@
 # Working papers: every paper with a draft file in the "Working Papers" folder, newest first.
 # Fields: title, authors (full order from the title page), version (date on the draft), year,
-# pdf (path in this repo), abstract. Papers without a draft go under "progress" below.
+# pdf (path in this repo) and/or ssrn (link), abstract. Papers without a draft go under "progress" below.
 
 papers:
+  - title: "Machine, Human, or Both?"
+    authors: [Naveen Sunder]
+    version: September 2026
+    year: 2026
+    ssrn: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7636418
+    abstract: >
+      I evaluate different ways of making an objective decision with a clear decision rule:
+      machine-only, human-only, and a hybrid system. I document four stylized facts. First, replacing
+      the human-only system with automated decisions cuts errors from 8.3 percent to 0.3 percent,
+      while the hybrid regime cuts errors only to between 5.1 and 5.5 percent. Fifth, I show that the
+      actions being evaluated do not change in response to the evaluation technology, and hence do
+      not drive these results. Second, in the hybrid regime the evaluator makes better decisions even
+      in cases where the decisions are not (or cannot be) appealed. Third, appeals are limited by what
+      appellants can observe, not by the number of allowed appeals: I show that they observe errors
+      with noise, and that they appeal only large enough errors. Fourth, the errors that remain in the
+      hybrid regime lead to a residual rent that accrues to some workers, while under automation there
+      is no such rent.
+
+  - title: "Testing Judge Leniency Designs When the Truth Is Known: A Replication and Extension of Sigstad (2026)"
+    authors: [Naveen Sunder]
+    version: September 2026
+    year: 2026
+    ssrn: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7636358
+    abstract: >
+      I conduct a thorough replication of Sigstad (2026), and then extend the analysis on judge
+      leniency designs using several datasets. Using baseball umpires' calls I show that (i)
+      monotonicity fails more often among umpires than among judges; (ii) despite this, the 2SLS
+      estimate is within 1.5 percent of the true estimate; (iii) this is because the cases violating
+      monotonicity have nearly the same effect as others, different from Sigstad (2026)'s findings;
+      and (iv) in this setting, I show that standard tests of leniency designs often reject designs
+      that give unbiased estimates and do not reject others that give biased estimates, suggesting
+      caution in the use of such tests. Additionally, I show that the findings hold in (i) another US
+      baseball league, (ii) a Korean baseball league, and (iii) in six other sports that have
+      judges/umpires adjudicating on player performance, akin to a typical judge leniency design.
+
   - title: "The Company You Keep: Peer Effects of Early Childhood Education on Learning and Mental Health in Early Adolescence"
     authors: [Yanan Li, Nidhiya Menon, Naveen Sunder]
     version: September 2026

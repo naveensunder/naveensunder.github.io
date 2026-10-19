@@ -241,6 +241,7 @@ a:focus-visible, button:focus-visible {
 .pub-section-body > .pub:last-child { border-bottom: 0; }
 
 .pub-title {
+  text-wrap: pretty;
   font-size: 1.2rem;
   font-weight: 500;
   line-height: 1.4;
@@ -315,6 +316,27 @@ pre.cite-text {
 }
 p.cite-text { font-size: 1.02rem; line-height: 1.5; max-width: 42em; margin: 0.5rem 0 0.2rem; }
 
+/* Publications page: one wide numbered list */
+.page-content.pubs-page { max-width: 68rem; }
+.pub-list > .pub:first-child { padding-top: 0; }
+.pub-list > .pub:last-child { border-bottom: 0; }
+.pub.numbered {
+  display: grid;
+  grid-template-columns: 2.75rem minmax(0, 1fr);
+  column-gap: 0.75rem;
+}
+.pub-num {
+  font-family: var(--sans);
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--accent);
+  text-align: right;
+  line-height: 1.6;
+  font-variant-numeric: tabular-nums;
+}
+.pub-body { min-width: 0; }
+.pubs-page .pub-panel p { max-width: 50em; }
+
 /* ---------- teaching, contact, cv ---------- */
 
 .plain-list { margin: 0; padding: 0; list-style: none; }
@@ -374,6 +396,7 @@ p.cite-text { font-size: 1.02rem; line-height: 1.5; max-width: 42em; margin: 0.5
   .page-main { padding: 1.5rem 1rem 3rem; }
   .site-footer { padding: 1.5rem 1rem 2rem; justify-content: center; text-align: center; }
   .page-title { font-size: 2.4rem; }
+  .pub.numbered { grid-template-columns: 2rem minmax(0, 1fr); column-gap: 0.5rem; }
   .contact-grid { grid-template-columns: 1fr; gap: 0.1rem; }
   .contact-grid dt { margin-top: 0.6rem; }
 }
