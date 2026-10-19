@@ -77,7 +77,7 @@ Fields used: title, authors, journal, year, volume, pages, doi, url, pdf, ssrn, 
   <p class="pub-cite">{{ apa_authors }}
     {%- if pub.journal %}<br><em>{{ pub.journal }}</em>, {{ pub.year }}
     {%- elsif pub.version %}<br>Draft, {{ pub.version }}
-    {%- elsif pub.status %}<br>{{ pub.status }}{% endif %}</p>
+    {%- elsif pub.status %}<br><span class="pub-status">{{ pub.status }}</span>{% endif %}</p>
   {%- if pub.abstract or pub.url or pub.doi or pub.pdf or pub.ssrn or pub.year %}
   <div class="pub-links">
     {%- if pub.abstract %}

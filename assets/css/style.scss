@@ -20,6 +20,7 @@
   --nav: #495057;
   --link: #1a1a1a;
   --cite-dim: #8a8a8a;
+  --status: #a3460f;
   --serif: "Source Serif 4", Charter, Georgia, "Times New Roman", serif;
   --sans: "Source Sans 3", "Helvetica Neue", Arial, sans-serif;
   --mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
@@ -249,6 +250,15 @@ a:focus-visible, button:focus-visible {
   color: var(--heading);
 }
 .pub-cite { font-size: 1.02rem; line-height: 1.5; color: var(--muted); margin: 0.1rem 0 0; }
+.pub-status {
+  display: inline-block;
+  margin-top: 0.15rem;
+  font-family: var(--sans);
+  font-size: 0.98rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  color: var(--status);
+}
 
 .pub-links {
   display: flex;
